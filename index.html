@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dharani's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #f9f9f9, #e3e3e3);
+            color: #333;
+            line-height: 2.8rem;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background-color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 45px;
+            color: #6c5ce7;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            font-size: 22px;
+            position: relative;
+            padding: 5px 15px;
+        }
+
+        nav a:hover::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 100%;
+            height: 2px;
+            background-color: #6c5ce7;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 60px;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .section-content {
+            max-width: 900px;
+            text-align: left;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+
+        }
+
+        .hero-text {
+            max-width: 50%;
+            margin-bottom: 300px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .hero-text h1 {
+            font-size: 60px;
+            font-weight: 700;
+
+        }
+
+        .hero-text p {
+            font-size: 30px;
+            padding: 10px;
+            line-height: 3.1rem;
+        }
+
+        .hero-image {
+            width: 450px;
+            height: 450px;
+            background: url('profilepic.jpg') no-repeat center center/cover;
+            border-radius: 50%;
+            margin-right: 150px;
+            margin-bottom: 200px;
+        }
+
+        h2 {
+            font-size: 38px;
+            color: #6c5ce7;
+        }
+
+        p, li {
+            font-size: 22px;
+        }
+
+        .cta-button {
+            padding: 12px 25px;
+            background-color: #6c5ce7;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            font-size: 18px;
+        }
+
+        .highlight {
+            color: #6c5ce7;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text {
+                max-width: 100%;
+            }
+
+            .hero-image {
+                width: 280px;
+                height: 280px;
+            }
+
+            .section {
+                padding: 40px 20px;
+            }
+
+            .section-content {
+                max-width: 100%;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Dharani's Portfolio</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#cv">Download CV</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero section">
+        <div class="hero-text">
+            <h1>Hello, I'm <span class="highlight">Dharani</span></h1>
+            <p>
+                A <b>passionate BCA student</b> at TERFS College, dedicated to coding, design, and innovation. 
+                I specialize in creating dynamic websites, engaging interfaces, and impactful user experiences.
+            </p>
+        </div>
+        <div class="hero-image"></div>
+    </div>
+
+    <div id="about" class="section">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>
+                I am a <b>Bachelor of Computer Applications (BCA)</b> student with a strong passion for coding and development. 
+                My expertise lies in languages such as <b>C, C++, Java, Python, HTML, CSS, and JavaScript</b>. 
+                I have completed certifications from platforms like <b>LinkedIn, TCS iON, Infosys Springboard, and HackerRank</b>.
+            </p>
+        </div>
+    </div>
+
+    <div id="projects" class="section">
+        <div class="section-content">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <b>Electricity Bill Calculator:</b> A web app built with HTML, CSS, and JavaScript that simplifies 
+                    household billing calculations with clear breakdowns.
+                </li>
+                <li>
+                    <b>Hangman Game:</b> An interactive Python game that enhances vocabulary and critical thinking.
+                </li>
+                <li>
+                    <b>Shopping Website:</b> A responsive e-commerce platform featuring product listings, secure payments, and cart management.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="contact" class="section">
+        <div class="section-content">
+            <h2>Contact Me</h2>
+            <p>
+                Feel free to connect with me for collaborations, ideas, or coding discussions. 
+                You can reach me via email at <b>dhaaranishanmugam224@gmail.com</b>.
+            </p>
+        </div>
+    </div>
+
+    <div id="cv" class="section">
+        <div class="section-content">
+            <h2>Download CV</h2>
+            <p>
+                My CV highlights my technical skills, projects, certifications, and achievements. 
+                Download it to explore my journey in greater detail.
+            </p>
+            <a href="Resume Dharani.pdf" download class="cta-button">Download CV</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Dharani Shanmugam. All rights reserved.</p>
+    </footer>
+</body>
+</html>
